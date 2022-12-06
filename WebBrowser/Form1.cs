@@ -23,18 +23,21 @@ namespace WebBrowser
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void addressBar_TextChanged(object sender, EventArgs e)
         {
 
         }
 
        
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-            webBrowser1.Url = new Uri(textBox1.Text);
+            webBrowser1.Url = new Uri(addressBar.Text);
         }
 
-        
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            webBrowser1.GoHome();
+        }
     }
 }
