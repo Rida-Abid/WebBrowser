@@ -38,6 +38,7 @@ namespace WebBrowser
         private void btnHome_Click(object sender, EventArgs e)
         {
             webBrowser1.GoHome();
+            webBrowser1.Url = new Uri(addressBar.Text);
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -55,6 +56,11 @@ namespace WebBrowser
                 webBrowser1.GoForward();
             }
 
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Refresh();  
         }
     }
 }
