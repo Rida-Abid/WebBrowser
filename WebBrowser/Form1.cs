@@ -39,5 +39,22 @@ namespace WebBrowser
         {
             webBrowser1.GoHome();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if (webBrowser1.CanGoBack)
+            {
+                webBrowser1.GoBack();
+            }
+        }
+
+        private void btnForward_Click(object sender, EventArgs e)
+        {
+            if (webBrowser1.CanGoForward)
+            {
+                webBrowser1.GoForward();
+            }
+
+        }
     }
 }

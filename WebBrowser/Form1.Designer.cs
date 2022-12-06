@@ -32,8 +32,9 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.addressBar = new System.Windows.Forms.TextBox();
             this.btnHome = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnForward = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -72,31 +73,50 @@
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Gill Sans Ultra Bold Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnHome.Location = new System.Drawing.Point(89, 64);
+            this.btnHome.Location = new System.Drawing.Point(31, 63);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(133, 32);
             this.btnHome.TabIndex = 5;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.button1_Click);
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // button2
+            // btnBack
             // 
-            this.button2.Location = new System.Drawing.Point(291, 64);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 32);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBack.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Gill Sans Ultra Bold Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack.Location = new System.Drawing.Point(213, 64);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(132, 32);
+            this.btnBack.TabIndex = 6;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // button3
+            // btnForward
             // 
-            this.button3.Location = new System.Drawing.Point(460, 64);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(116, 32);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnForward.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnForward.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForward.Font = new System.Drawing.Font("Gill Sans Ultra Bold Condensed", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnForward.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnForward.Location = new System.Drawing.Point(372, 64);
+            this.btnForward.Name = "btnForward";
+            this.btnForward.Size = new System.Drawing.Size(128, 32);
+            this.btnForward.TabIndex = 7;
+            this.btnForward.Text = "Forward";
+            this.btnForward.UseVisualStyleBackColor = false;
+            this.btnForward.Click += new System.EventHandler(this.btnForward_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(533, 60);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(124, 36);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -104,8 +124,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(964, 484);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnForward);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.addressBar);
             this.Controls.Add(this.btnSearch);
@@ -123,8 +144,9 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox addressBar;
         private System.Windows.Forms.Button btnHome;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnForward;
+        private System.Windows.Forms.Button button1;
     }
 }
 
